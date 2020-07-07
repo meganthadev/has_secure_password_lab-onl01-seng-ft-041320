@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to homepage_path(@user)
     else
-      redirect_to '/'
+      redirect_to '/new'
     end
   end 
   
